@@ -1,0 +1,33 @@
+<h1>Login no sistema</h1>
+<form (ngSubmit)="onSubmit()" [formGroup]="form" autocomplete="off">
+    <div style="display: flex; justify-content: center">
+      
+  
+        <div>
+          
+            <label>Usuário</label>
+            <input
+              matInput
+              placeholder="Usuário"
+              formControlName="user"
+            />
+          
+        </div>
+  
+        <!-- Password -->
+        <div>
+    
+            <label>Password</label>
+            <input
+              matInput
+              type="password"
+              placeholder="Senha"
+              formControlName="password"
+            />
+
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+    </div>
+  </form>

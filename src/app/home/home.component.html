@@ -1,0 +1,16 @@
+<h1>Pagina Inicial</h1>
+<div>
+    <table class="tabela">
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let dado of dados" class="card-body">
+    <td> {{ dado.Codigo }}</td>
+    <td>{{ dado.Nome }}</td>
+    </tbody >
+    </table>
+  </div>
+  <button id="toastbtn" (click)="onLogoff()" class="btn btn-primary">Sair</button>
